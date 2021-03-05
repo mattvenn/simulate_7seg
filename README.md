@@ -8,6 +8,8 @@ Aim is to measure maximum current of the circuit during one clock cycle.
 * use pulse to make a single clock 
 * try to plot current
 
+To reduce the long startup time, I've cut most of the subckt out of wrapped_seven_segment.spice. The original file is wrapped_seven_segment.spice.complete
+
 # Questions
 
 * Can I just leave all the subckt nodes unconnected? I am only interested in VGND, VPWR, wb_clk_i and active. 
