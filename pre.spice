@@ -1,8 +1,0 @@
-MOSFET Simulation
-* this file edited to remove everything not in tt lib
-.lib "./sky130_fd_pr/models/sky130.lib.spice" tt
-
-* instantiate the inverter
-Xmosfet DRAIN GATE VGND VGND X0
-
-.subckt X0 drain gate source VSUBS
