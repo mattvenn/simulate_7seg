@@ -162,7 +162,7 @@ X23 VGND a_96_21# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000
 .ends
 
 .subckt sky130_fd_sc_hd__diode_2 DIODE VGND VPWR VPB VNB
-X0 VNB DIODE sky130_fd_pr__diode_pw2nd_05v5 area=4.347e+11p
+D0 VNB DIODE sky130_fd_pr__diode_pw2nd_05v5 area=4.347e+11p
 .ends
 
 .subckt sky130_fd_sc_hd__and3_4 A B C X VNB VPB VGND VPWR
