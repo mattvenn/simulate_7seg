@@ -1,0 +1,4 @@
+.subckt sky130_fd_sc_hd__conb_1 LO HI VPB VNB VGND VPWR
+R0 HI VPWR 0.01
+R1 VGND LO 0.01
+.ends
