@@ -1,12 +1,11 @@
 7seg Simulation
 * this file edited to remove everything not in tt lib
-.lib "./sky130_fd_pr/models/sky130.lib.spice" tt
+.lib "./sky130_fd_pr/models/sky130.lib_tt.spice" tt
 *.inc "./sky130_fd_pr/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__tt.pm3.spice"
 *.inc "./sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.pm3.spice"
 *.inc "./sky130_fd_pr/models/sky130_fd_pr__model__r+c.model.spice"
 .inc "./resistor.spice" 
 .inc "./wrapped_seven_segment.spice" 
-.inc "./inputs.spice" 
 
 Xtest active io_in[0] io_in[10] io_in[11] io_in[12] io_in[13]
 + io_in[14] io_in[15] io_in[16] io_in[17] io_in[18] io_in[19] io_in[1] io_in[20] io_in[21]
@@ -56,15 +55,12 @@ Xtest active io_in[0] io_in[10] io_in[11] io_in[12] io_in[13]
 + wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3] wbs_stb_i wbs_we_i
 + VPWR VGND wrapped_seven_segment 
 
-* active low
-VVactive Vactive 0 0
-
-* all inputs set low
+* generated file sets all inputs low see gen_inputs.py
+.inc "./inputs.spice" 
 
 * set gnd and power
 Vgnd VGND 0 0
 Vdd VPWR VGND 1.8
-
 
 * create pulse on clock
 * Vclk wb_clk_i VGND pulse(0 1.8 1p 10p 10p 1n 2n)
