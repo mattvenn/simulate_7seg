@@ -1,6 +1,7 @@
 7seg Simulation
 * this file edited to remove everything not in tt lib
-.lib "./sky130_fd_pr/models/sky130.lib_tt.spice" tt
+.lib "./sky130_fd_pr/models/sky130.lib.spice" tt
+*.lib "./sky130_fd_pr/models/sky130.lib_tt.spice" tt
 *.inc "./sky130_fd_pr/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__tt.pm3.spice"
 *.inc "./sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.pm3.spice"
 *.inc "./sky130_fd_pr/models/sky130_fd_pr__model__r+c.model.spice"
