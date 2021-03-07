@@ -1,8 +1,13 @@
-MOSFET Simulation
+7seg Simulation
 * this file edited to remove everything not in tt lib
 .lib "./sky130_fd_pr/models/sky130.lib.spice" tt
-.inc "./wrapped_seven_segment.spice" 
+.inc "./sky130_fd_pr/cells/pfet_01v8_hvt/sky130_fd_pr__pfet_01v8_hvt__tt.pm3.spice"
+.inc "./sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.pm3.spice"
+.inc "./sky130_fd_pr/models/sky130_fd_pr__model__r+c.model.spice"
 .inc "./resistor.spice" 
+.inc "./wrapped_seven_segment.spice.complete" 
+
+.option wnflag=1
 
 Xtest Vactive io_in[0] io_in[10] io_in[11] io_in[12] io_in[13]
 + io_in[14] io_in[15] io_in[16] io_in[17] io_in[18] io_in[19] io_in[1] io_in[20] io_in[21]
