@@ -1,4 +1,5 @@
 module_inputs = {
+    'active'    : 1,
     'io_in'     : 38,
     'la_data_in': 32,
     'wb_clk_i'  : 1,
