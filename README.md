@@ -7,6 +7,7 @@ Aim is to measure average current of the circuit for first 50ps
 * hold all inputs low
 * plot current
 * measure average current: -9.396809e-09 A
+* takes about 8 mins on my newish desktop
 
 ![current](current.png)
 
